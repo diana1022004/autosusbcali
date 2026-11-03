@@ -7,9 +7,10 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
-
 @Repository
 public interface RolRepository extends JpaRepository<Rol, Long> {
     Optional<Rol> findByNombre(String nombre);
+    // select * from rol r where r.name = 'algun nombre'
     List<Rol> findByActivo(Boolean activo);
+    Boolean existsByNombre(String nombre);
 }

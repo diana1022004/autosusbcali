@@ -13,7 +13,7 @@ import java.time.OffsetDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Facturas {
+public class Factura {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
